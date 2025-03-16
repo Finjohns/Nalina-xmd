@@ -1,5 +1,5 @@
 //base by DGXeon
-//recode by GiddyTennor 
+//recode by 𝐉𝐢𝐧𝐰𝐢𝐢𝐥𝐎𝐧𝐠𝐢𝐧𝐣𝐨
 
 require('./lib/listmenu')
 const {
@@ -287,7 +287,7 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
                             title: botname,
                             body: ownername,
                             previewType: "PHOTO",
-                            thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'),
+                            thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),
                             sourceUrl: wagc
                         }
                     },
@@ -303,7 +303,7 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
                         showAdAttribution: true,
                         title: botname,
                         body: ownername,
-                        thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'),
+                        thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),
                         sourceUrl: websitex,
                         mediaType: 1,
                         renderLargerThumbnail: true
@@ -346,7 +346,7 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":botname, "h": wm,'seconds': '359996400', 'caption': `${pushname}`, 'jpegThumbnail': thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: wm,jpegThumbnail: thumb}}}
 		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=916909137213:916909137213\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
-	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('./XMEDIA/theme/bellah.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
+	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 	    const frpayment = {
 	key: {
 		remoteJid: '0@s.whatsapp.net',
@@ -1350,7 +1350,7 @@ break
   case 'daffz':
 case 'menu': {
 let apalahh = `ʜɪ,${pushname}!*   *This is* *Nalina Xmd a multi device awesome 
-bot made by Giddy Tennor*
+bot made by Jinwiil Onginjo🏴‍☠️*
 
 
 ⚝ *I N F O - B O T* ⚝
@@ -1418,9 +1418,9 @@ bot made by Giddy Tennor*
  ❥mediafire
 
  *//Crash Menu//*
- ❥Bellah-trash
- ❥Bellah-flow
- ❥Bellah-spam
+ ❥Nalina-trash
+ ❥Nalina-flow
+ ❥Nalina-spam
  ❥Bug-group
 
 *//Setting Menu//*
@@ -1464,7 +1464,7 @@ bot made by Giddy Tennor*
  ❥pair
  ❥sendlocation
  
-> join updates gc https://chat.whatsapp.com/EqDVC9BGF9k86ZMHdjxY0d
+> join updates gc https://chat.whatsapp.com/KoK02NUGIdsL0vqY7U9DjY
 `
 let sections = [{
 
@@ -1781,7 +1781,7 @@ let sg2alok = {
                             surface : 99999999,
                             message: 'T O U R L',
                             orderTitle: 'H A L O',
-                            thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'), 
+                            thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'), 
                             sellerJid: '0@s.whatsapp.net'
           
                           }
@@ -1808,7 +1808,7 @@ ${link}
     mediaType: 1,
     title: '',
     body: null,
-    thumbnailUrl: 'https://telegra.ph/file/1d681780e96553bf8d771.jpg', 
+    thumbnailUrl: 'https://files.catbox.moe/2ctpw0.jpg', 
     sourceUrl: null,
     renderLargerThumbnail: true, 
     showAdAttribution: true
@@ -2976,14 +2976,14 @@ mentionedJid: [m.sender],
 forwardingScore: 9999, 
 isForwarded: true, 
 forwardedNewsletterMessageInfo: {
-newsletterJid:'https://chat.whatsapp.com/EqDVC9BGF9k86ZMHdjxY0d',
+newsletterJid:'https://chat.whatsapp.com/KoK02NUGIdsL0vqY7U9DjY',
 serverMessageId: 20,
 newsletterName: '𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐦𝐝'
 },
 externalAdReply: {
 title: "𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐦𝐝", 
 body: "",
-thumbnail: null, 
+thumbnail: 'https://files.catbox.moe/2ctpw0.jpg', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaxZbeSDTkJwBgUb9u3N',
 mediaType: 1
 }}}, { quoted : m })
@@ -3592,7 +3592,7 @@ isForwarded: true,
 "body": `${ownername}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync(`./XMEDIA/theme/bellah.jpg`),
+"thumbnail": fs.readFileSync(`https://files.catbox.moe/2ctpw0.jpg`),
 "sourceUrl": `${wagc}`}}},
 { quoted: m})        
             }
@@ -4345,7 +4345,7 @@ console.error("Error processing group link:", error);
 }
 }
 break;
-                //tennor
+                //𝐉𝐢𝐧𝐰𝐢𝐢𝐥𝐎𝐧𝐠𝐢𝐧𝐣𝐨
             default:
                 if (budy.startsWith('=>')) {
                     if (!Owner) return reply(mess.owner)
