@@ -205,9 +205,9 @@ try{
 			console.log(color(` `,'magenta'))
             console.log(color(`Connected to => ` + JSON.stringify(Bellah.user, null, 2), 'green'))
 			await delay(1999)
-			Bellah.sendMessage(`254769365617@s.whatsapp.net`, { text: `\`CONNECTED *BOSS*\`
+			Bellah.sendMessage(`254769365617@s.whatsapp.net`, { text: `\`CONNECTED\`
 
- Holla, 😴,Connected`})
+ Holla *BOSS*, 😴,Connected`})
 			await Bellah.newsletterFollow(channelId);
        const CFonts = require('cfonts');
 CFonts.say('NALINA XMD', {
