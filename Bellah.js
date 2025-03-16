@@ -574,7 +574,7 @@ return build_server + data.image
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: 'GiddyTennor',
+            author: '𝐉𝐢𝐧𝐰𝐢𝐢𝐥𝐎𝐧𝐠𝐢𝐧𝐣𝐨',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
             xeonyresult.push(result)
@@ -1141,7 +1141,7 @@ console.log(futureTime);
 Bellah.relayMessage(m.chat, { liveLocationMessage: { 
 degreesLatitude: 35.676570,
 degreesLongitude: 139.762148,
-caption : `Bellah Xmd`,
+caption : `Nalina Xmd`,
 sequenceNumber: 1656662972682001, timeOffset: futureTime, jpegThumbnail: null,
 contextInfo: {
 mentionedJid: [m.sender],
@@ -1245,7 +1245,7 @@ interactiveMessage: {
 body: {
 text: teks }, 
 footer: {
-text: "by Bellah Xmd" }, //input watermark footer
+text: "by Nalina Xmd" }, //input watermark footer
   nativeFlowMessage: {
   buttons: [
              {
@@ -1286,8 +1286,8 @@ compact: true,
 minify: true,
 flatten: true,
 identifierGenerator: function () {
-const originalString = "素GIDDY晴TENNOR晴" + "素GIDDY晴TENNOR晴";
-const removeUnwantedChars = (input) => input.replace(/[^a-zA-Z素GIDDY晴TENNOR晴]/g, "");
+const originalString = "素JINWIIL晴ONGINJO晴" + "素JINWIIL晴ONGINJO晴";
+const removeUnwantedChars = (input) => input.replace(/[^a-zA-Z素JINWIIL晴ONGINJO晴]/g, "");
 const randomString = (length) => {
 let result = "";
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -1324,7 +1324,7 @@ mimetype: 'application/javascript',
 fileName: `${fileName}`,
 caption: `•Successful Encrypt
 •Type: Hard Code
-•@Tennormodz`,
+•@JINWIILTECH🏴‍☠️`,
 }, { quoted: m });
 
 } catch (err) {
@@ -1349,7 +1349,7 @@ reply(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Dura
 break
   case 'daffz':
 case 'menu': {
-let apalahh = `ʜɪ,${pushname}!*   *This is* *Bellah Xmd a multi device awesome 
+let apalahh = `ʜɪ,${pushname}!*   *This is* *Nalina Xmd a multi device awesome 
 bot made by Giddy Tennor*
 
 
@@ -1464,8 +1464,7 @@ bot made by Giddy Tennor*
  ❥pair
  ❥sendlocation
  
-> join updates gc
-https://chat.whatsapp.com/CzFlFQrkdzxFw0pxCBYM7H
+> join updates gc https://chat.whatsapp.com/EqDVC9BGF9k86ZMHdjxY0d
 `
 let sections = [{
 
@@ -1531,8 +1530,8 @@ let msg = generateWAMessageFromContent(m.chat, {
  mentionedJid: [m.sender], 
  isForwarded: true, 
  forwardedNewsletterMessageInfo: {
- newsletterJid: '120363322464215140@newsletter',
- newsletterName: 'Powered By Tennormodz ', 
+ newsletterJid: '120363388529450317@newsletter',
+ newsletterName: 'Powered By Jinwiiltech🏴‍☠️ ', 
  serverMessageId: -1
 },
  businessMessageForwardInfo: { businessOwnerJid: Bellah.decodeJid(Bellah.user.id) },
