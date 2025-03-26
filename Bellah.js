@@ -287,7 +287,7 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
                             title: botname,
                             body: ownername,
                             previewType: "PHOTO",
-                            thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),
+                            thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'),
                             sourceUrl: wagc
                         }
                     },
@@ -303,7 +303,7 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
                         showAdAttribution: true,
                         title: botname,
                         body: ownername,
-                        thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),
+                        thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'),
                         sourceUrl: websitex,
                         mediaType: 1,
                         renderLargerThumbnail: true
@@ -345,8 +345,8 @@ module.exports = Bellah = async (Bellah, m, chatUpdate, store) => {
 		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": wm, "caption": `${pushname}`, 'jpegThumbnail': thumb}}}
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":botname, "h": wm,'seconds': '359996400', 'caption': `${pushname}`, 'jpegThumbnail': thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: wm,jpegThumbnail: thumb}}}
-		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=916909137213:916909137213\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
-	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
+		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=254769365617:254713192684\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('./XMEDIA/theme/bellah.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 	    const frpayment = {
 	key: {
 		remoteJid: '0@s.whatsapp.net',
@@ -1781,7 +1781,7 @@ let sg2alok = {
                             surface : 99999999,
                             message: 'T O U R L',
                             orderTitle: 'H A L O',
-                            thumbnail: fs.readFileSync('https://files.catbox.moe/2ctpw0.jpg'), 
+                            thumbnail: fs.readFileSync('./XMEDIA/theme/bellah.jpg'), 
                             sellerJid: '0@s.whatsapp.net'
           
                           }
@@ -2878,7 +2878,7 @@ break
  await Bellah.groupParticipantsUpdate(m.chat, [(args[0] === "numBut") ? `${remove}@s.whatsapp.net` : remove], "remove");
  await sleep(3000);
  }
- m.reply(`NALINA XMD HAS SUCCESSFULLY REMOVED ALL GROUP PARTICIPANTS`);
+ m.reply(`DELLA XMD HAS SUCCESSFULLY REMOVED ALL GROUP PARTICIPANTS`);
 }
 break  
         case 'tagall':
@@ -2944,14 +2944,14 @@ break
                 if (!isAdmins && !isGroupOwner && !Owner) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.admin)
                 let response = await Bellah.groupInviteCode(m.chat)
-                Bellah.sendText(m.chat, `👥 *GROUP LINK BY NALINA XMD*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Owner Grup :* ${groupMetadata.owner !== undefined ? '+'+ groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
+                Bellah.sendText(m.chat, `👥 *GROUP LINK BY DELLA XMD*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Owner Grup :* ${groupMetadata.owner !== undefined ? '+'+ groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
                     detectLink: true
                 })
             break
                 case "repo": {
   try {
     let me = m.sender;
- const response = await axios.get(`https://api.github.com/repo/Finjohns/Nalina-Xmd`)
+ const response = await axios.get(`https://api.github.com/repo/Finjohns/Della-Xmd`)
     if (response.status === 200) {
       const repoData = response.data
       const repos = `
@@ -2965,7 +2965,7 @@ break
 > ${repoData.forks_count}
 
 *GITHUB LINK:* 
-https://github.com/Finjohns/Nalina-Xmd
+https://github.com/Finjohns/Della-Xmd
 
 @${me.split("@")[0]}👋, Star ⭐ fork and deploy my repo 🤭
 
@@ -3764,7 +3764,7 @@ case "p": {
 
   const startTime = performance.now();
   const latency = performance.now() - startTime;
-  const finalStatus = `𝗡𝗮𝗹𝗶𝗻𝗮 𝐗𝐌𝐃 𝐒𝐏𝐄𝐄𝐃: ${latency.toFixed(4)} ms`;
+  const finalStatus = `DELLA 𝐗𝐌𝐃 𝐒𝐏𝐄𝐄𝐃: ${latency.toFixed(4)} ms`;
   reply(finalStatus);
 }
 break;    
@@ -3785,7 +3785,7 @@ break;
 *[ 𝙄𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧 // `𝖢𝖠𝖲𝖤` ]*
 - 𝖢𝗋𝖾𝖺𝗍𝖾𝖽 By Fyzskypedia 
 - Apikey By: diioffc
-- https://whatsapp.com/channel/0029Vb6Z2MZ4IBhHCGxGGa3w
+- https://whatsapp.com/channel/0029Vb6Z2MZ4IB
 */
 
 
@@ -3972,12 +3972,12 @@ async function FlowButton(target) {
               forwardingScore: 999,
               forwardedNewsletterMessageInfo: {
                 newsletterJid: `120363388529450317@newsletter`,
-                newsletterName: "Nalina Xmd 👻",
+                newsletterName: "Della Xmd 👻",
                 businessOwnerJid: target,
               },
             },
             body: {
-              text: "‎🩸Nalina Xmd 👻",
+              text: "‎🩸Della Xmd 👻",
             },
             nativeFlowMessage: {
               buttons: [
