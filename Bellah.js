@@ -284,15 +284,15 @@ contextInfo: {
 forwardingScore: 999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterName: "☌ 𝗩𝗼𝗹𝘁𝗮𝗵 𝗫𝗺𝗱☌",
-newsletterJid: "120363257205745956@newsletter",
+newsletterName: "☌ 𝐅𝐢𝐧𝐣𝐨𝐡𝐧𝐬 𝗫𝗺𝗱☌",
+newsletterJid: "120363388529450317@newsletter",
 },
 externalAdReply: {  
 showAdAttribution: true,
 title: global.botname, 
 body: global.ownername,
-thumbnailUrl: 'https://files.catbox.moe/c9f4kz.jpg',
-sourceUrl: 'https://files.catbox.moe/c9f4kz.jpg',
+thumbnailUrl: 'https://files.catbox.moe/1c654o.jpg',
+sourceUrl: 'https://files.catbox.moe/1c654o.jpg',
 },
 },
 text: teks,
@@ -1010,8 +1010,8 @@ return `\n *Exaple Provide :*\n request *${prefix+command}* ${teks}\n`
     case 'menu': 
 case 'help': {
 let Menu = `
-┏━━「 \` 𝐕𝐨𝐥𝐓𝐚𝐡 𝐗𝐦𝐝\` 」
-│ ─≽ *Creator*: *𝐆𝐢𝐝𝐝𝐲 𝐓𝐞𝐧𝐧𝐨𝐫*
+┏━━「 \` 𝐅𝐢𝐧𝐣𝐨𝐡𝐧𝐬 𝐗𝐦𝐝\` 」
+│ ─≽ *Creator*: *𝐉𝐢𝐧𝐰𝐢𝐢𝐥 𝐎𝐧𝐠𝐢𝐧𝐣𝐨*
 │ ─≽ *Bot Name* :${global.botname}
 │ ─≽ *Name* : ${pushname}
 │ ─≽ *Version* :*𝟐.𝟎.𝟎*
@@ -1157,12 +1157,12 @@ let Menu = `
 ` 
     Bellah.sendMessage(m.chat, {
         image: {
-            url: `https://files.catbox.moe/t3gs2m.jpg`
+            url: `https://files.catbox.moe/lrnb7j.jpg`
         },
         caption: Menu,
         gifPlayback: false
     }, { quoted: loli });
-await  Bellah.sendMessage(m.chat, { audio: {url: "https://files.catbox.moe/idskdm.mp3"}, mimetype: 'audio/mp4', ptt:true}, { quoted: loli });
+await  Bellah.sendMessage(m.chat, { audio: {url: "https://files.catbox.moe/pkmmu9.mp3"}, mimetype: 'audio/mp4', ptt:true}, { quoted: loli });
 }
 break
            //========================================================\\        
